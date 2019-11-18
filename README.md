@@ -12,7 +12,7 @@ This role is provided AS IS and I can and will not guarantee that the role works
 
 ## License
 
-GPLv3
+MIT
 
 ## Author Information
 
