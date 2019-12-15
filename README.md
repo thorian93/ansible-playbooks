@@ -8,7 +8,7 @@ Please feel free to open issues if you find any bugs, problems or if you see roo
 
 ## Disclaimer
 
-This role is provided AS IS and I can and will not guarantee that the role works as intended, nor can I be accountable for any damage or misconfiguration done by this role. Study the role thoroughly before using it.
+These playbooks are provided AS IS and I can and will not guarantee that they work as intended, nor can I be accountable for any damage or misconfiguration done by them. Study the playbooks thoroughly before using them.
 
 ## License
 
