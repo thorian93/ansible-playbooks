@@ -1,0 +1,3 @@
+- name: "Wait for {{ sleep_duration }} seconds."
+  pause:
+    seconds: "{{ sleep_duration }}"

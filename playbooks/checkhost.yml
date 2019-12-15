@@ -1,0 +1,21 @@
+---
+- name: Check Kernel Version and Uptime.
+  shell: 'echo $(/bin/uname -r)  $(uptime | cut -d" " -f3,4,5)'
+  args:
+    executable: /bin/bash
+  register: checkhost_kernel_uptime
+  changed_when: checkhost_kernel_uptime.rc != 0
+- name: Check SystemD Status.
+  shell: 'systemctl list-units | grep -i failed'
+  args:
+    executable: /bin/bash
+  register: checkhost_systemd
+  changed_when: checkhost_systemd.rc == 0
+  failed_when: checkhost_systemd.rc > 1
+- name: Print Kernel Version and Uptime.
+  debug:
+    var: checkhost_kernel_uptime.stdout
+- name: Print SystemD Status.
+  debug:
+    var: checkhost_systemd.stdout_lines
+  when: checkhost_systemd.rc == 0
