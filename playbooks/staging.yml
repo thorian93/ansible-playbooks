@@ -1,0 +1,15 @@
+---
+- hosts: vagrant
+  become: yes
+  roles:
+    - ansible-role-common
+    # - ansible-role-common-proxy
+    # - ansible-role-grafana
+    # - ansible-role-influxdb
+    # - ansible-role-journald
+    # - ansible-role-nginx
+    # - ansible-role-ntp
+    # - ansible-role-ssh
+    # - ansible-role-supervisor
+    # - ansible-role-unattended-upgrade
+    # - ansible-role-upgrade
